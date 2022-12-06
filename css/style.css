@@ -1,0 +1,23 @@
+img {
+  width: 400px;
+}
+
+.avatar_download {
+  display: flex;
+  flex-direction: column;
+  flex-wrap:  wrap;
+  width: 50%;
+  height: 100vh;
+  align-items: center;
+  justify-content:center;
+  margin: auto;
+  font-size: 2rem;
+}
+
+
+.download {
+  background-color: #c23946;
+  border-radius: 10px;
+  padding: 10px 10px 10px 10px;
+
+}
