@@ -11,7 +11,7 @@
 
   label .menu {
     position: fixed;
-    right: 0px;
+    right: 10px;
     top: -100px;
     z-index: 100;
     width: 100px;
