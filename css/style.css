@@ -113,10 +113,13 @@ body {
   margin: 0;
   font-family: verdana;
   font-size: 0.8rem;
+  background-color: #313638;
+  color:white;
 }
 
 img {
   width: 200px;
+  border-radius: 30px;
 }
 
 .avatar_download {
@@ -127,7 +130,7 @@ img {
   align-items: center;
   justify-content:center;
   margin: auto;
-  margin-top: 15%;
+  margin-top: 10%;
 
 }
 
