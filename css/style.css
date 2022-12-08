@@ -148,12 +148,27 @@ div .download{
   border-radius: 10px;
   padding: 10px 10px 10px 10px;
   font-size: 1.3em;
-
 }
+
+.download:hover {
+  background-color: white;
+}
+
+.download:hover span {
+  color: #313638;
+}
+
 
 .profil p {
   text-align: center;
   padding: 10px 0 10px 0;
+  color: #313638;
+  margin-top:15px;
+  margin-bottom:0;
+}
+
+.profil {
+  background-color: #dcdde1;
 }
 
 .a-propos {
@@ -295,7 +310,7 @@ section {
   align-items: center;
   font-family: verdana;
   overflow: scroll;
-  background-color: white;
+  background-color: #dcdde1;
   padding:10px;
 }
 
@@ -374,6 +389,21 @@ input:not(:checked)+label+.ci {
 }
 
 /* Fin Slide competence */
+
+.loisirs {
+  background-color: #dcdde1;
+  color: #313638;
+}
+
+.loisirs h3 {
+  margin-top: 0;
+  text-align: center;
+  padding-top: 15px;
+
+}
+
+
+
 
 /* Timeline */
 
