@@ -78,10 +78,13 @@ Hamburger
 
   }
 
-  label input:checked + .menu + ul {opacity: 1; }
+  label input:checked + .menu + ul {
+    opacity: 1;
+    z-index: 200;
+   }
 
   label ul {
-    z-index: 200;
+    z-index: -10;
     position: fixed;
     top: 40%;
     left: 50%;
@@ -131,7 +134,7 @@ body {
   display: flex;
   flex-direction: column;
   width: 70%;
-  height: 100vh;
+  height: 89vh;
   align-items: center;
   justify-content:center;
   margin: auto;
@@ -194,7 +197,9 @@ section {
   align-items: center;
   justify-content: center;
   background: var(--bg);
-  z-index: -10;
+  z-index: 200;
+  position:fixed;
+
 }
 
 .icon-list {
@@ -298,10 +303,17 @@ section {
 }
 
 .soft-skill ul {
+  padding:0;
+}
+
+.soft-skill li {
   padding: 0;
+  width: 100%;
   text-align: center;
   font-size: 1.3em;
   color:white;
+  list-style: none;
+  line-height: 35px;
 }
 
 .section-slide {
