@@ -478,3 +478,178 @@ input:not(:checked)+label+.ci {
 	background-color:white;
 	box-shadow:0px 0px 10px 8px #c23946;
 }
+
+
+/* Portfolio */
+
+#folio h3 {
+  text-align: center;
+  font-size: 1.8em;
+}
+
+.box {
+  background-color: #313638;
+  width: 85%;
+  display: flex;
+  flex-direction:row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: auto;
+
+
+}
+
+.box p {
+  border-radius: 0px 0px 5px 5px;
+  height: 50px;
+  background-color: rgba(25, 25, 25, 0.7);
+  color: white;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  font-family: verdana;
+  padding-left: 10px;
+  margin: 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.photo {
+  height: 300px;
+  width: 500px;
+  border-radius: 5px;
+  margin: 10px;
+  background-size: cover;
+  position:relative;
+}
+
+.hovered {
+  position: absolute;
+  top: 0; bottom: 0; left: 0; right: 0;
+  height: 100%; width: 100%;
+  opacity: 0; transition: all .5s;
+  background-color: rgba(25, 25, 25, 0.8);
+}
+
+.hovered span {
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  font-family: verdana;
+  text-align: center;
+
+  line-height: 1.5;
+}
+
+
+
+#japan1 {
+  background-image: url("../img/japan-1.jpeg");
+}
+
+#japan1:hover .text{
+  opacity: 0;
+}
+
+#japan1:hover .hovered{
+  opacity: 1;
+}
+
+
+
+
+#japan2 {
+  background-image: url("../img/japan-2.jpeg");
+}
+
+#japan2:hover .text{
+  opacity: 0;
+}
+
+#japan2:hover .hovered{
+  opacity: 1;
+}
+
+
+
+
+#japan3 {
+  background-image: url("../img/japan-3.jpeg");
+}
+
+#japan3:hover .text{
+  opacity: 0;
+}
+
+#japan3:hover .hovered{
+  opacity: 1;
+}
+
+
+
+
+#japan4 {
+  background-image: url("../img/japan-4.jpeg");
+}
+
+#japan4:hover .text{
+  opacity: 0;
+}
+
+#japan4:hover .hovered{
+  opacity: 1;
+}
+
+
+
+
+#japan5 {
+  background-image: url("../img/japan-5.jpeg");
+}
+
+#japan5:hover .text{
+  opacity: 0;
+}
+
+#japan5:hover .hovered{
+  opacity: 1;
+}
+
+
+
+
+#japan6 {
+  background-image: url("../img/japan-6.jpeg");
+}
+
+#japan6:hover .text{
+  opacity: 0;
+}
+
+#japan6:hover .hovered{
+  opacity: 1;
+}
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+
+
+.box div {
+  text-align: center;
+ }
+
+
+ .box {
+   width: 100%;
+ }
+
+#folio {
+  margin-bottom: 20%;
+}
