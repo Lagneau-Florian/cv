@@ -1,5 +1,5 @@
 /* MENU HAMBURGER */
-
+Hamburger
 
   nav {
     display: none;
@@ -117,10 +117,15 @@ body {
   color:white;
 }
 
-img {
+
+
+
+#avatar img {
   width: 200px;
   border-radius: 30px;
 }
+
+
 
 .avatar_download {
   display: flex;
@@ -130,8 +135,11 @@ img {
   align-items: center;
   justify-content:center;
   margin: auto;
-  margin-top: 10%;
+  margin-top: 5%;
+}
 
+div .download{
+  margin-top: 5%;
 }
 
 
@@ -139,17 +147,237 @@ img {
   background-color: #c23946;
   border-radius: 10px;
   padding: 10px 10px 10px 10px;
+  font-size: 1.3em;
 
 }
 
+.profil p {
+  text-align: center;
+  padding: 10px 0 10px 0;
+}
+
+.a-propos {
+  height: 100vh;
+}
+
+/* Icone contact */
+
+
+:root {
+  --bg: #dcdde1;
+  --color-icon: #313638;
+  --social-icon1: #c23946;
+  --social-icon2: #0077B5;
+  --social-icon3: #c23946;
+  --social-icon4: #0077B5;
+}
+
+
+section {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg);
+  z-index: -10;
+}
+
+.icon-list {
+  width: 100%;
+  max-width: 50rem;
+  padding: 0 1.5rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.icon-item {
+  list-style: none
+}
+
+.icon-link {
+
+  font-size: 2rem;
+  text-decoration: none;
+  color: var(--color-icon);
+  width: 6rem;
+  height: 6rem;
+  transition: .3s linear;
+  position: relative;
+  z-index: 1;
+  margin: auto
+}
+
+.icon-link:hover {
+  color: #fff;
+  background-color: #313638;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+.icon-link i {
+  margin: auto;
+}
+
+
+.icon-link:hover::before {
+  transform: scale(1);
+}
+
+.icon-item:nth-child(1) a:hover:before {
+  background: var(--social-icon1);
+}
+
+.icon-item:nth-child(2) a:hover:before {
+  background: var(--social-icon2);
+}
+
+.icon-item:nth-child(3) a:hover:before {
+  background: var(--social-icon3);
+}
+
+.icon-item:nth-child(4) a:hover:before {
+  background: var(--social-icon4);
+}
+
+.icon-item:nth-child(5) a:hover:before {
+  background: var(--social-icon5);
+}
+/* Fin icone réseau */
+
+/* Slide competence */
+
+
+
+
+.icone-logiciel img{
+  width: 80px;
+  padding: 10px;
+}
+
+.icone-logiciel {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content:space-evenly;
+  align-content:space-around;
+  height: 250px;
+  margin-top: 20px;
+}
+
+
+.soft-skill {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: small;
+  list-style: none;
+  align-items: center;
+  justify-content: center;
+  height: 250px;
+  margin-top: 20px;
+}
+
+.icone-logiciel p {
+  text-align: center;
+  color:white;
+  margin-top: 0;
+}
+
+.soft-skill ul {
+  padding: 0;
+  text-align: center;
+  font-size: 1.3em;
+  color:white;
+}
+
+.section-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: verdana;
+  overflow: scroll;
+  background-color: white;
+  padding:10px;
+}
+
+.section-slide h2 {
+  display: flex;
+  font-size: large;
+  margin-top: 45px;
+  justify-content: center;
+  color: white;
+
+}
+
+.competence {
+  width: 100%;
+  height: 400px;
+  border-radius: 12px;
+  padding-bottom: 20px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  box-sizing: border-box;
+  background-color: #313638;
+}
+
+.ci {
+  position: absolute;
+  top: 0;
+  transform-origin: left 50%;
+  background: inherit;
+  z-index: var(--z);
+  transition: .3s ease-out;
+  width: 100%;
+}
+
+
+input {
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  z-index: -10;
+}
+
+.section-slide label {
+  width: 20%;
+  height: 4px;
+  margin-right: 5px;
+  border-radius: 20px;
+  background: hsla(0 0% 90% / .3);
+  cursor: pointer;
+  position: relative;
+  z-index: 10;
+}
+
+label:last-child {
+  margin-right: 0;
+}
+
+input:checked+label {
+  background: #c23946;
+}
+
+input:not(:checked)+label+.ci {
+  transform: translateX(-100%);
+  opacity: 0;
+}
+
+input:checked+label+.ci~.ci {
+  transform: translateX(100%);
+}
+
+input:not(:checked)+label+.ci {
+  transition: 0;
+}
+
+/* Fin Slide competence */
 
 /* Timeline */
 
-
-
 .timeline{
-
-
   display:flex;
   flex-direction: column;
   justify-content:center;
