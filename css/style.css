@@ -199,6 +199,7 @@ section {
   background: var(--bg);
   z-index: 200;
   position:fixed;
+  bottom: 0;
 
 }
 
